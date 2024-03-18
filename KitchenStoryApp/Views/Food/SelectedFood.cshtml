@@ -1,0 +1,15 @@
+﻿@model KitchenStoryApp.Models.FoodModel
+
+@{
+    ViewBag.Title = "SelectedFood";
+}
+
+<h2>SelectedFood</h2>
+<form method="post">
+    <label>Enter Quantity @TempData["FoodName"]:</label>
+    <input type="number" name="qty"  /><br />
+    
+    <input type="submit" name="Selected" value="Order Now" />
+</form>
+@Html.ActionLink(" Menu", "Menu")
+
